@@ -125,7 +125,7 @@ $CateList.forEach((e,i)=>{
  
         $CateList[i].classList.add("on")
 
-        axios.get("../data.json")
+        axios.get("data.json")
         .then(function(res){
             let PortData;
             console.log(res)
