@@ -1,4 +1,4 @@
-axios.get("../data.json")
+axios.get("data.json")
 .then(function(res){
     console.log(res);
     res.data.profile.map((e,i)=>{

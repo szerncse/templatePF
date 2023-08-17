@@ -142,7 +142,7 @@ $CateList.forEach((e,i)=>{
     })
 })
 
-axios.get("../data.json")
+axios.get("data.json")
 .then(function(res){
     console.log(res.data.portfolio)
     PortfolioData(res.data.portfolio)

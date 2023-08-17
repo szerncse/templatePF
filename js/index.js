@@ -42,7 +42,7 @@ const url = new URL(location.href).searchParams;
 const lang = url.get("Lang")
 
 
-axios.get("../data.json")
+axios.get("data.json")
 .then(function(res){
 
     if($lang == "en" ){
