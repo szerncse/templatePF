@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{font-family: 'omyu_pretty';}
+
+.dark body,
+.dark .nav{
+    animation: infinite 9s background alternate-reverse; color: rgb(61, 150, 228);}
+.m-btn.on > div:nth-child(1){transform: rotate(45deg) translateY(14px);}    
+.m-btn.on > div:nth-child(2){transform: translateX(-30px); opacity: 0;} 
+.m-btn.on > div:nth-child(3){transform: rotate(-45deg) translateY(-14px);}    
+.m-btn.on +div{right: 0;}
+
+@keyframes background {
+    0%{background-color: #976b90;}
+    50%{background-color:rgb(92, 136, 136)}
+    100%{background-color:rgb(0, 0, 0)}
+}
+
+.list li::after{content: ""; position: absolute; width: 100%; height: 1px; background-color: #000;bottom: 0; left: 0; transition: 1s; transform: scaleX(0);}
+.dark .list li::after{background-color: #ebf4f1;}
+.list li.on::after,
+.list li:hover::after{transform: scaleX(1);}
+.list li on,
+.list li:hover{font-weight: bold;}
+
+
+

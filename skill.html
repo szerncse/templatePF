@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="w-full nav dark:border-b px-[2%] sticky top-0 bg-white py-2.5 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="https://via.placeholder.com/120x50" alt="logo"
+                title="로고">
+            </a>
+            <div class="basis-3/4 hidden md:block">
+                <ul class="flex justify-around list">
+                    <li class="relative"><a href="profile.html">프로필</a></li>
+                    <li class="relative on"><a href="skill.html">스킬</a></li>
+                    <li class="relative"><a href="portfolio.html">포트폴리오</a></li>
+                </ul>
+            </div>
+            <div class="basis-1/12 hidden md:block">
+                <ul class="flex justify-between">
+                    <li onclick="darkMode()" class="basis-2/4 text-center cursor-pointer text-2xl">
+                        <i class="fas fa-moon"></i>
+                    </li>
+                    <li class="basis-2/4 text-center cursor-pointer text-2xl relative group">
+                        <i class="fas fa-globe"></i>
+                        <ul class="dark:bg-[#272929] absolute w-20 top-[30px] - left-[-12px]
+                        bg-white rounded transition-all duration-500
+                        flex flex-wrap h-0 overflow-hidden group-hover:h-20">
+                            <li class="w-full basis-full h-10 leading-10"><a href="?Lang=kr" class="text-sm">한국어</a></li>
+                            <li class="w-full basis-full h-10 leading-10"><a href="?Lang=en"class="text-sm">영어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+<div class="w-full pt-12 mt-16 px-[2%] pb-8">
+    <div class="max-w-7xl mx-auto p-5 bg-white rounded-md border 
+    dark:bg-[#272929] dark:text-[#edf41f1]">
+   <h3 class="relative font-bold text-center text-xl sm:text-2xl
+   lg:text-3xl tracking-widest after:dakr:bg-[#d9d9d9] after:-bottom-1 after:absolute
+   after:w-10 after:h-[2px] after:bg-black
+   after:left-2/4 after:-translate-x-2/4">스킬</h3>
+ </div>
+ <div class="max-w-7xl mx-auto mt-8">
+    <div class="bg-white rounded-md border dark:bg-[#272929]dark:text-[#ebf4f1] p-5 mb-8 last:mb-0 skill-content"></div>
+ </div>
+</div>
+
+<!-- <div class="w-full h-5 bg-[#e0e0de] rounded-[50px]"></div> -->
+
+<!-- <div class="h-20"></div> -->
+<!-- <div class="absolute -top-6 md:-top-7 left-1 text-sm md:text-lg"></div> -->
+<!-- <div class="text-sm md:text-base"></div> -->
+<!-- <div class="h-full bg-slate-700 duration-1000 ease-in-out rounded-[50px] text-right relative mb-3 first:mt-10"></div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/skill.js"></script>
+
+</body>
+</html>
