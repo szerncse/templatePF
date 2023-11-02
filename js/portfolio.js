@@ -130,7 +130,7 @@ $CateList.forEach((e,i)=>{
             let PortData;
             console.log(res)
             if($attr === "전체"){
-
+                PortData = res.data.portfolio;
             }else{
                 PortData = res.data.portfolio.filter(item => item.type == $attr)
                 // item.type 필터에 한에서 값을 바로 보낼때는 중괄호를 생략한다.
